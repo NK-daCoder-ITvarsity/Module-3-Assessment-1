@@ -1,0 +1,202 @@
+:root {
+    --padding-screen: .6em;
+    --third-section-background-color: linear-gradient(hsl(240, 100%, 24%), hsl(239, 100%, 12%));
+    --border-radius-banner: 15px;
+    --main-background-color: linear-gradient(hsl(0, 0%, 100%), hsla(0, 0%, 49%, 0.466));
+}
+
+.main-background {
+    background-image: var(--main-background-color);
+}
+
+/* ================== third section with navigation ======================= */
+
+.third-section {
+    padding-top: 4em;
+    padding-left: var(--padding-screen);
+    padding-bottom: var(--padding-screen); 
+    background: var(--third-section-background-color);
+    height: 50vh;
+    border-bottom-left-radius: var(--border-radius-banner);
+    border-bottom-right-radius: var(--border-radius-banner);
+}
+
+.third-section__heading {
+    padding-bottom: .2em;
+    letter-spacing: 2px;
+    font-size: 1.9rem;
+}
+
+.font-size {    
+    font-size: .7rem;
+}
+
+.third-section__unordered-list {
+    margin-top: 1.5em;
+    display: flex;
+    padding-bottom: 1em;
+    gap: 1.5em;
+    overflow: auto;
+}
+
+.current-link {
+    border-bottom: 3px solid white;
+    cursor: pointer;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.link--color {
+    color: white;
+}
+
+.decoration-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 27vh;
+    padding: 1.5em;
+    
+}
+
+.image-decoration {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(1px 3px 10px black);
+}
+
+.paragraph {
+    margin-top: 2.7em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.main {
+    margin-bottom: 5em;
+}
+
+/* ================== Card List =================== */
+
+.catalogue {
+    padding: var(--padding-screen);
+}
+
+.unordered-card-list {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5em;
+}
+
+.card {
+    border-radius: var(--border-radius-banner);
+    background-color: white;
+}
+
+.card__image {
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(1px 1px 5px black);
+
+}
+
+.card__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.card__paragraph {
+    margin-top: .9em;
+    margin-bottom: .9em;
+    
+    width: 90%;
+    padding: .5em;
+    border-radius: 5px;
+    background: linear-gradient(hsl(212, 100%, 56%), rgb(0, 0, 97));
+    color: white;
+    
+
+    box-shadow: inset 1px 1px 2px 0 hsl(236, 100%, 50%), inset 1.8px 1.8px 1px 0 hsl(189, 100%, 50%), inset -1px -1px 2px 0 hsl(246, 100%, 19%), inset -1px -1px 0 0 hsl(199, 100%, 20%);
+}
+
+/* ==================================== Recipy webpages styles ======================================= */
+.ingredient-section {
+    padding: var(--padding-screen);
+    margin-top: 8em;
+}
+
+.ingredient-section__checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.checkbox-section__iconic-image {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.checkbox {
+    background-color: black;
+}
+
+.ingrediant {
+    padding-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8rem;
+}
+
+.instructions-section {
+    margin-top: 2em;
+    padding: var(--padding-screen);
+}
+
+.instruction-section__image {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-banner);
+}
+
+.instruction-section__list-item {
+    padding-top: 1em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.instruction-section__paragraph {
+    font-size: .9rem;
+    padding-bottom: .7em;
+    letter-spacing: 1.1px;
+    font-family: sans-serif;
+}
+
+.instruction-section__step-header {
+
+    padding-bottom: .5em;
+}
+
+.preperations {
+    box-shadow: 1px 1px 1px 1px hsla(0, 0%, 0%, 0.404), -1px -1px 1px 1px hsla(0, 0%, 100%, 0.521);
+    border-radius: 5px;
+    padding: var(--padding-screen);
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.preperations__heading {
+    padding-bottom: .5em;
+}

@@ -1,0 +1,67 @@
+:root {
+    --background-color: linear-gradient(hsl(207, 100%, 30%), hsl(240, 43%, 21%));
+    --navigation-border: hsla(0, 0%, 0%, 0.178);
+    --background-navigation-color: white;
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header-navigation {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.header-navigation__unordered-list {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3em;
+    text-align: center;
+    padding-bottom: .4em;
+    padding-top: .6em;
+    border: 1px solid var(--navigation-border);
+    background-color: var(--background-navigation-color);
+}
+
+.navigation__image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: .4em;
+    border: 1px solid hsla(244, 100%, 12%, 0.432);
+}
+
+.image--pressed {
+    background-image: var(--background-color);
+}
+
+.secondary-navigation {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--navigation-border);
+    padding: .9em;
+    background-color: var(--background-navigation-color);
+    z-index: 1;
+}
+
+.button-navigation {
+    position: fixed;
+}
+
+/* ================== Logo ======================= */
+
+.recipe-logo {
+    width: 27px;
+    height: 27px;
+}

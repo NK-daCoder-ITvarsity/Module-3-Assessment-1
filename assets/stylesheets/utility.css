@@ -1,0 +1,70 @@
+
+:root {
+    --gray-white-background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 0%, 81%) 95%);
+}
+
+.main-background--white-color {
+    background-image: var(--gray-white-background);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* ==================== unordered-list ====================== */
+
+.unordered-list--bullet-removed > li {
+    list-style: none;
+}
+
+.unordered-list--underline-removed > li a {
+    text-decoration: none;
+}
+
+/* ==================== text-alignment ====================== */
+
+.text-align--left {
+    text-align: left;
+}
+
+.text-align--center {
+    text-align: center;
+}
+
+.text-align--right {
+    text-align: right;
+}
+
+.text-align--justify {
+    text-align: justify;
+}
+
+/* ==================== text-alignment ====================== */
+.text-color--white {
+    color: white;
+}
+
+/* ==================== font-sizing ====================== */
+
+.font-size--large {
+    font-size: 5rem;
+}
+
+@media (max-width: 900px) {
+    .font-size--large {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 200px) {
+    .font-size--large {
+        font-size: 1.95rem;
+    }
+}
+
+/* ==================== grid-sizing ====================== */
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .6em;
+}
