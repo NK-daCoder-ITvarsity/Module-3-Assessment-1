@@ -200,3 +200,15 @@
 .preperations__heading {
     padding-bottom: .5em;
 }
+
+.tuna-image {
+    position: relative;
+    top: -120px;
+}
+
+.salad-image {
+    position: relative;
+    top: -1px;
+    left: 40px;
+    width: 250px;
+}
