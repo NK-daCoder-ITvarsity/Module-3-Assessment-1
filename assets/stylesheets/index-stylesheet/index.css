@@ -100,7 +100,15 @@
     width: 150px;
     height: 150px;
     filter: drop-shadow(1px 1px 5px black);
+}
 
+@media (min-width: 900px) {
+    .image-decoration {
+        width: 500px;
+        position: relative;
+        left: 395px;
+        top: -50px
+    }
 }
 
 .card__link {
